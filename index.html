@@ -1,11 +1,180 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Davide La Cerva — Architecture Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #111111;
+            color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding: 48px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+        }
+
+        .discipline {
+            font-size: 13px;
+            color: #aaaaaa;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto 0;
+        }
+
+        h1 {
+            font-size: clamp(48px, 8vw, 110px);
+            line-height: 0.95;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            margin-bottom: 50px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 22px;
+
+            color: #f2f2f2;
+            text-decoration: none;
+
+            border: 1px solid #555555;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+            transition: all 0.25s ease;
+        }
+
+        .button:hover {
+            background: #f2f2f2;
+            color: #111111;
+            border-color: #f2f2f2;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            font-size: 11px;
+            color: #888888;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 28px;
+            }
+
+            header {
+                display: block;
+            }
+
+            h1 {
+                font-size: 18vw;
+                margin-bottom: 40px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            footer {
+                margin-top: 60px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Davide La Cerva</h1>
-    <p>Architecture Portfolio</p>
+
+    <header>
+        <div>
+            <div class="name">Davide La Cerva</div>
+            <div class="discipline">Architecture · Exhibition Design</div>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>
+            Architecture<br>
+            Portfolio
+        </h1>
+
+        <div class="buttons">
+
+            <a
+                class="button"
+                href="https://drive.google.com/file/d/13q3qK6bvK2gO4llDvBz_q4zgFLesWqpv/preview"
+                target="_blank">
+                View Portfolio
+            </a>
+
+            <a
+                class="button"
+                href="https://drive.google.com/file/d/13q3qK6bvK2gO4llDvBz_q4zgFLesWqpv/view?usp=sharing"
+                target="_blank">
+                Portfolio on Google Drive
+            </a>
+
+            <a
+                class="button"
+                href="cv.pdf"
+                target="_blank">
+                View CV
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <span>Politecnico di Milano</span>
+        <span>© 2026 Davide La Cerva</span>
+    </footer>
+
 </body>
+
 </html>
